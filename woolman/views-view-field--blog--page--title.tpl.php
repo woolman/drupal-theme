@@ -1,0 +1,1 @@
+<h2><?php print $output; ?></h2>

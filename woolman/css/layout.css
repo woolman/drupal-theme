@@ -1,0 +1,103 @@
+/** body **/
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#page,
+#closure-blocks{
+  min-width: 960px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+#top-links {
+	padding-top:5px;
+	padding-right:5px;
+	height:28px;
+}
+
+#menus {
+	bottom:0;
+	position:absolute;
+	right:4%;
+	width:90%;
+}
+
+/** main (container for everything else) **/
+#main{
+  position: relative;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:5px;
+}
+
+/** content **/
+#content{
+  float: left;
+  width: 100%;
+  margin-left: 0;
+  margin-right: -100%; /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
+}
+
+#content-inner,
+.no-sidebars #content-inner{
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-left #content-inner{
+  padding-left: 216px; /* The width + left margin of #sidebar-left. */
+  padding-right: 0;
+}
+
+.sidebar-right #content-inner{
+  padding-left: 0;
+  padding-right: 216px; /* The width + right margin of #sidebar-right. */
+}
+
+.two-sidebars #content-inner{
+  padding-left: 216px; /* The width + left margin of #sidebar-left. */
+  padding-right: 216px; /* The width + right margin of #sidebar-right. */
+}
+
+/** sidebar-left **/
+#sidebar-left{
+  float: left;
+  width: 216px;
+  margin-left: 0;
+  margin-right: -216px; /* Negative value of #sidebar-left's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-left-inner. */
+}
+
+#sidebar-left-inner{
+  margin: 0 12px 0 0;
+  padding: 0;
+}
+
+/** sidebar-right **/
+#sidebar-right{
+  float: right;
+  width: 216px;
+  margin-left: -216px; /* Negative value of #sidebar-right's width + right margin. */
+  margin-right: 0;
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
+}
+
+#sidebar-right-inner{
+  margin: 0 0 0 12px;
+  padding: 0;
+}
+
+/** Prevent overflowing content **/
+#header,
+#content,
+#sidebar-left,
+#sidebar-right,
+#footer,
+#closure-blocks{
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}

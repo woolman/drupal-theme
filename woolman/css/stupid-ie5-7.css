@@ -1,0 +1,57 @@
+#headerlinks li {
+	filter: alpha(opacity = 35);
+}
+
+#headerlinks li:hover {
+	filter: alpha(opacity = 100);
+}
+
+body.site-home #homelink {filter: alpha(opacity = 100);}
+body.site-semester #semesterlink {filter: alpha(opacity = 100);}
+body.site-camp #camplink {filter: alpha(opacity = 100);}
+body.site-blog #bloglink {filter: alpha(opacity = 100);}
+body.site-alumni #alumnilink {filter: alpha(opacity = 100);}
+body.site-store #storelink {filter: alpha(opacity = 100);}
+
+	
+body.node div.tabs li,
+body.section-gallery div.tabs li {
+	filter: alpha(opacity = 40);
+	zoom: 1;
+}
+
+body.node #content-header:hover div.tabs li,
+body.section-gallery #content-header:hover div.tabs li,
+.view ul.tabs li {
+	filter: alpha(opacity = 70);
+}	
+	
+body.node #content-header:hover div.tabs li:hover,
+body.section-gallery #content-header:hover div.tabs li:hover,
+.view ul.tabs li:hover {
+	filter: alpha(opacity = 100);
+}
+
+div.block.with-block-editing div.edit {
+	filter: alpha(opacity = 40);
+}
+
+div.block.with-block-editing div.edit:hover {
+	filter: alpha(opacity = 100);
+}
+
+ #header {
+	z-index:2;
+}
+#main {
+	z-index:1;
+}
+#footer {
+	position:relative;
+	z-index:1;
+} 
+
+.view-blog .view-content,
+.region-sidebars .block-inner {
+	zoom:1;
+}

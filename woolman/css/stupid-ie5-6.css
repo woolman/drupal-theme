@@ -1,0 +1,27 @@
+#header #menus {
+/* 	text-align:right; */
+}
+
+#header #menus ul.sf-menu {
+	zoom:1;
+}
+
+#header #menus ul.sf-menu li.menuparent {
+	padding:0.5em 1em;
+}
+
+#header #menus span.nolink{
+	display:inline;
+	width:auto;
+	padding:0;
+	margin:0;
+	border:none;
+}
+
+#header #menus .sf-menu li.menuparent ul  {
+top:28px;
+}
+
+.sf-menu li.last ul  {
+left: expression((parentNode.offsetWidth - offsetWidth) + 'px');
+}
