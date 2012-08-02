@@ -657,10 +657,10 @@ background-image:url(/sites/all/themes/woolman/images/background-light.jpg);
 .view table tr.even{
 background-image:url(/sites/all/themes/woolman/images/background-dark.jpg);
 }
-body.section-staff.site-home .view table tr{
+body.section-admin .view table tr{
 background-image:none;
 }
-body.section-staff.site-home .view table tr.odd{
+body.section-admin .view table tr.odd{
 background-color: #E0E0E0;
 }
 .view table td{
@@ -697,26 +697,23 @@ background-image: url(/sites/all/themes/woolman/images/bullets/bad-bullet.png);
 
 /* CiviCRM & Drupal Admin Sections */
 
-body.section-admin #page,
-body.section-staff.site-home #page{
+body.section-admin #page{
 background:white;
 max-width:2000px;
 }
 
 /*add space for civi menu*/
 #civicrm-menu + #page{
-margin-top:23px;  
+margin-top:24px;  
 position:relative;
 }
 
-body.section-admin #header,
-body.section-staff.site-home #header{
-height:100px;
-background:<?php print dcss_color($base_color, '-3');?> url(/sites/all/themes/woolman/images/woolman_pjs.png) no-repeat 10px 10px;
+body.section-admin #header{
+height:60px;
+background:<?php print dcss_color($base_color, '-3');?> url(/sites/all/themes/woolman/images/woolman_pjs_sm.png) no-repeat 10px 10px;
 }
 
-body.section-admin div.region-sidebars div.block-inner,
-body.section-staff.site-home div.region-sidebars div.block-inner{
+body.section-admin div.region-sidebars div.block-inner{
 background:<?php print dcss_color($base_color, '+8');?>;
 border:0px solid <?php print dcss_color($base_color, '-3');?>;
 -webkit-border-radius:7px;
@@ -724,8 +721,7 @@ border:0px solid <?php print dcss_color($base_color, '-3');?>;
 border-radius:7px;
 }
 
-body.section-admin div.block-bottom,
-body.section-staff.site-home div.block-bottom{
+body.section-admin div.block-bottom{
 display:none;
 }
 

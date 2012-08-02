@@ -111,8 +111,11 @@ function woolman_preprocess_page(&$vars, $arg) {
     $domain = 'home';
     $section = $aliasarray[0];
     if ($section == 'staff' || ($section == 'civicrm' && user_access('access CiviCRM'))) {
-      $section = 'staff';
-      $vars['search_box'] = NULL;
+      $public_pages = array('civicrm/contribute/transact', 'civicrm/event/register');
+      if (!in_array($_GET['q'], $public_pages)) {
+        $section = 'admin';
+        $vars['search_box'] = NULL;
+      }
     }
   }
 
@@ -233,7 +236,7 @@ piwikTracker.enableLinkTracking();
         <li>' . l('<span class="tab">New Album</span>', 'node/add/woolman-node-gallery', array('html' => TRUE)) . '</li></ul>';
   }
 
-  $vars['test_server'] = $testserver ? '<div style="position:absolute; top:0.8em; right:0.5em; font-size:3em; color:red; font-weight:bold">Test Server</div>' : '';
+  $vars['test_server'] = $testserver ? '<div style="position:absolute; top:0.5em; right:0.5em; font-size:2.6em; color:red; font-weight:bold">Test Server</div>' : '';
 }
 
 /**
