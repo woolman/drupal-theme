@@ -110,8 +110,9 @@ function woolman_preprocess_page(&$vars, $arg) {
   else {
     $domain = 'home';
     $section = $aliasarray[0];
-    if ($section == 'civicrm' && user_access('access CiviCRM')) {
+    if ($section == 'staff' || ($section == 'civicrm' && user_access('access CiviCRM'))) {
       $section = 'staff';
+      $vars['search_box'] = NULL;
     }
   }
 

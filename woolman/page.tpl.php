@@ -108,9 +108,11 @@
 
     <div id="top-links">
 
+    <?php if ($search_box): ?>
       <div id="search-box">
         <?php print $search_box; ?>
       </div>
+    <?php endif; ?>
 
       <div id="current-user-links">
         <?php print $user_links ?>
