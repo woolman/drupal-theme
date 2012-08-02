@@ -105,16 +105,20 @@ function woolman_preprocess_page(&$vars, $arg) {
   // add domain to body classes, and also add first arg of drupal path
   if ($aliasarray[0][0] == '~') {
     $domain = substr($aliasarray[0], 1);
-    $vars['body_classes_array'][] = 'section-'.$aliasarray[1];
+    $section = $aliasarray[1];
   }
   else {
     $domain = 'home';
-    $vars['body_classes_array'][] = 'section-'.$aliasarray[0];
+    $section = $aliasarray[0];
+    if ($section == 'civicrm' && user_access('access CiviCRM')) {
+      $section = 'staff';
+    }
   }
 
+  $vars['body_classes_array'][] = 'section-' . $section;
   $vars['body_classes_array'][] = arg(0);
-  $vars['body_classes_array'][] = 'site-'.$domain;
-  $vars['body_classes'] = implode (' ', $vars['body_classes_array']);
+  $vars['body_classes_array'][] = 'site-' . $domain;
+  $vars['body_classes'] = implode(' ', array_unique($vars['body_classes_array']));
 
   //store value for use by page template and dcss
   $vars['current_domain'] = $domain;

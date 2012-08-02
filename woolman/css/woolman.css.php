@@ -657,10 +657,10 @@ background-image:url(/sites/all/themes/woolman/images/background-light.jpg);
 .view table tr.even{
 background-image:url(/sites/all/themes/woolman/images/background-dark.jpg);
 }
-body.section-staff .view table tr{
+body.section-staff.site-home .view table tr{
 background-image:none;
 }
-body.section-staff .view table tr.odd{
+body.section-staff.site-home .view table tr.odd{
 background-color: #E0E0E0;
 }
 .view table td{
@@ -703,21 +703,18 @@ background:white;
 max-width:2000px;
 }
 
-#civicrm-menu+#page{
-margin-top:23px;  /*add space for civi menu*/
+/*add space for civi menu*/
+#civicrm-menu + #page{
+margin-top:23px;  
 position:relative;
-background:white;
-max-width:2000px;
 }
 
-#civicrm-menu+#page #header,
 body.section-admin #header,
 body.section-staff.site-home #header{
 height:100px;
 background:<?php print dcss_color($base_color, '-3');?> url(/sites/all/themes/woolman/images/woolman_pjs.png) no-repeat 10px 10px;
 }
 
-#civicrm-menu+#page div.region-sidebars div.block-inner,
 body.section-admin div.region-sidebars div.block-inner,
 body.section-staff.site-home div.region-sidebars div.block-inner{
 background:<?php print dcss_color($base_color, '+8');?>;
@@ -727,7 +724,6 @@ border:0px solid <?php print dcss_color($base_color, '-3');?>;
 border-radius:7px;
 }
 
-#civicrm-menu+#page div.block-bottom,
 body.section-admin div.block-bottom,
 body.section-staff.site-home div.block-bottom{
 display:none;
