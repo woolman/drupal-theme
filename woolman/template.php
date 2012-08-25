@@ -408,9 +408,7 @@ function woolman_status_messages($display = NULL) {
  * Override form element template
  * 
  * CUSTOM BEHAVIORS:
- * 
  * * Don't add trailing ":" if title already ends in punctuation
- * 
  * * Add required mark if #req or #mark_req are true (allows form elements to be conditionally required
  *   via custom validation and still get a red * on the form)
  */

@@ -233,7 +233,7 @@ right:5px;
 bottom:-3px;
 }
 
-.view-blog .views-row{
+.view-Blog .views-row{
 position:relative;
 }
 
@@ -793,23 +793,23 @@ margin:0 4% 1em;
 
 /* Blog */
 
-.view-blog span.views-field-field-journal-date-value,
-.view-blog span.views-field-tid,
-.view-blog span.views-field-tid-1{
+.view-Blog span.views-field-field-journal-date-value,
+.view-Blog span.views-field-tid,
+.view-Blog span.views-field-tid-1{
 font-size:.8em;
 margin-right:1em;
 }
 
-div.view-blog.view-display-id-page_1 div.views-field-title h2,
-div.view-blog.view-display-id-page_2 div.views-field-title h2,
-div.view-blog.view-display-id-page_3 div.views-field-title h2,
-div.view-blog.view-display-id-page_4 div.views-field-title h2{
+div.view-Blog.view-display-id-page_1 div.views-field-title h2,
+div.view-Blog.view-display-id-page_2 div.views-field-title h2,
+div.view-Blog.view-display-id-page_3 div.views-field-title h2,
+div.view-Blog.view-display-id-page_4 div.views-field-title h2{
 padding-bottom:.1em;
 margin-bottom:.1em;
 border-bottom:1px solid <?php print $base_color;?> ;
 }
 
-div.view-blog.view-display-id-page_4 div.views-field-field-journal-author-value,
+div.view-Blog.view-display-id-page_4 div.views-field-field-journal-author-value,
 #blog-author{
 margin-top:.9em;
 margin-bottom:.9em;
@@ -820,13 +820,13 @@ margin-right:1em;
 font-size:.92em;
 }
 
-#blog-date-tags .view-blog,
+#blog-date-tags .view-Blog,
 #blog-date-tags .view-content,
 #blog-date-tags .views-row{
 display:inline;
 }
 
-.view-blog .views-field-body img{
+.view-Blog .views-field-body img{
 max-width:100%;
 }
 

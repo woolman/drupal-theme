@@ -23,7 +23,7 @@
     <?php print $field->separator; ?>
   <?php endif; ?>
 
-  <<?php print $field->inline_html;?> class="views-field-<?php print $field->class; ?>" id="node-<?php print $row->nid; ?>">
+  <<?php print $field->inline_html;?> class="views-field-<?php print $field->class; ?> node-<?php print $row->nid; ?>">
     <?php if ($field->label): ?>
       <label class="views-label-<?php print $field->class; ?>">
         <?php print $field->label; ?>:

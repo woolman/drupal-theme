@@ -1,1 +1,0 @@
-<h4 style="margin-bottom: 0pt;"><?php print $output; ?></h4>
