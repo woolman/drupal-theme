@@ -34,13 +34,13 @@ stylesheets[print][] = print.css
 
   ; Stylesheet overrides.
 stylesheets[all][]  = zen.css
-stylesheets[all][]	= superfish.css
-stylesheets[all][]	= superfish-vertical.css
-stylesheets[all][]	= superfish-navbar.css
-stylesheets[all][]	= block-editing.css
-stylesheets[all][]	= wireframes.css
-stylesheets[all][]	= html-elements.css
-stylesheets[all][]	= css/tableofcontents.css
+stylesheets[all][]  = superfish.css
+stylesheets[all][]  = superfish-vertical.css
+stylesheets[all][]  = superfish-navbar.css
+stylesheets[all][]  = block-editing.css
+stylesheets[all][]  = wireframes.css
+stylesheets[all][]  = html-elements.css
+stylesheets[all][]  = css/tableofcontents.css
 
 
 
@@ -51,18 +51,18 @@ stylesheets[all][]	= css/tableofcontents.css
 scripts[] = jquery.bgiframe.min.js
 scripts[] = js/woolman.js
 
-	; DYNAMIC CSS!
+  ; DYNAMIC CSS!
 
 stylesheets[all][]   = css/woolman.css.php
-stylesheets[all][]	 = css/superfish.css.php
+stylesheets[all][]   = css/superfish.css.php
 
-	settings[dcss][domain] = home
-	settings[dcss][base-color] = #78AA54
+  settings[dcss][domain] = home
+  settings[dcss][base-color] = #78AA54
 
-	settings[dcss][compliment] = #AE566E
-	settings[dcss][analogB] = #A7B95B
-	settings[dcss][analogA] = #408269
-	settings[dcss][compliment] = #CB7B92
+  settings[dcss][compliment] = #AE566E
+  settings[dcss][analogB] = #A7B95B
+  settings[dcss][analogA] = #408269
+  settings[dcss][compliment] = #CB7B92
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.
@@ -74,10 +74,10 @@ stylesheets[all][]	 = css/superfish.css.php
   ; add a line line to this file, and then add the new variable to your
   ; page.tpl.php template.
 
-regions[top_links]			= top links
+regions[top_links]      = top links
 regions[left]           = left sidebar
 regions[right]          = right sidebar
-regions[menus]					= menus
+regions[menus]          = menus
 regions[content_top]    = content top
 regions[content_bottom] = content bottom
 regions[header]         = header

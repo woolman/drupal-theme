@@ -34,11 +34,11 @@ if ( !array_key_exists($domain, $link_color) )
 
 /** body **/
 body{
-background:url(/sites/all/themes/woolman/images/background-light.jpg) repeat;
+background:url("/sites/all/themes/woolman/images/background-light.jpg") repeat;
 }
 
 #page{
-background:url(/sites/all/themes/woolman/images/background.jpg) repeat;
+background:url("/sites/all/themes/woolman/images/background.jpg") repeat;
 color:<?php print $text_color; ?>;
 }
 
@@ -330,22 +330,6 @@ div.comment.comment-unpublished .picture{
 position:relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
 }
 
-/*Better Select*/
-
-.better-select div.form-checkboxes-scroll{
-padding:5px;
-border:1px solid #CCC;
-max-height:150px;
-overflow:auto;
-}
-
-.better-select .form-checkboxes .checkbox-depth-0,
-.better-select .form-radios .form-item{
-padding-right:25px;
-float:left;
-clear:none;
-}
-
 div.form-radios,
 div.form-checkboxes{
 clear:both;
@@ -353,24 +337,6 @@ clear:both;
 
 .form-item .description{
 clear:both;
-}
-
-#upload-attachments .checkbox-depth-0,
-#better-select-edit-taxonomy-11 .checkbox-depth-0{
-clear:both;
-padding-top:5px;
-float:none;
-}
-
-#upload-attachments .checkbox-depth-1,
-#better-select-edit-taxonomy-11 .checkbox-depth-1{
-float:left;
-padding-left:22px;
-}
-
-#upload-attachments .checkbox-depth-0 label.option,
-#better-select-edit-taxonomy-11 .checkbox-depth-0 label.option{
-font-weight:bold;
 }
 
 /** Comments **/
@@ -397,7 +363,7 @@ border-radius:4px;
 }
 
 div.comment{
-background:url(/sites/all/themes/woolman/images/background-dark.jpg);
+background:url("/sites/all/themes/woolman/images/background-dark.jpg");
 padding:1em;
 -webkit-border-radius:4px;
 -moz-border-radius:4px;
@@ -470,19 +436,10 @@ margin:0px 0px 15px 0px;
 
 div.region-sidebars div.imagecache,
 div.region-sidebars div.views-field-field-journal-image-fid,
-div.region-sidebars div.views-field-field-staff-headshot-fid{
+div.region-sidebars div.views-field-field-staff-headshot-fid {
 float:right;
 margin-left:.6em;
 margin-bottom:.4em;
-}
-
-div.region-sidebars .separator{
-margin:.4em auto .2em;
-width:64px;
-}
-
-div.region-sidebars .views-row-last .separator{
-display:none;
 }
 
 div.region-sidebars a:link,
@@ -536,58 +493,20 @@ padding-left:7px;
 padding-left:4px;
 }
 
-/* Query block */
-
-.view-comment-view.view-display-id-attachment_2{
-font-size:.9em;
+/* Sidebar Seperators */
+.fancy-sep .views-row {
+  background-image: url("/sites/all/themes/woolman/images/sidebar-seperator.png");
+  background-position: center 9px;
+  background-repeat: no-repeat;
+  padding-top: 18px;
+}
+.fancy-sep .views-row:first-child {
+  background-image: none;
+  padding-top: 10px;
 }
 
-.view-comment-view.view-display-id-attachment_2 .views-field-phpcode{
-text-align:right;
-}
-
-#block-views-query_view-block_1 .views-row .separator{
-display:block;
-margin:.6em auto;
-}
-
-/*upcoming events block*/
-
-
-#block-views-events_and_schedules-block_1 .woolman-semester .event-name a:link,
-#block-views-events_and_schedules-block_1 .woolman-semester .event-name a:visited
-{color:<?php print dcss_color($link_color['semester'], '-2')?>}
-
-#block-views-events_and_schedules-block_1 .woolman-semester .event-name a:hover,
-#block-views-events_and_schedules-block_1 .woolman-semester .event-name a:focus
-{color:<?php print dcss_color($link_color['semester'], '-5'); ?>}
-
-#block-views-events_and_schedules-block_1 .woolman-semester .event-name a:focus
-{color:<?php print dcss_color($link_color['semester'], '+1'); ?>}
-
-#block-views-events_and_schedules-block_1 .sierra-friends-camp .event-name a:link,
-#block-views-events_and_schedules-block_1 .sierra-friends-camp .event-name a:visited
-{color:<?php print dcss_color($link_color['camp'], '-2'); ?>}
-
-#block-views-events_and_schedules-block_1 .sierra-friends-camp .event-name a:hover,
-#block-views-events_and_schedules-block_1 .sierra-friends-camp .event-name a:focus
-{color:<?php print dcss_color($link_color['camp'], '-5'); ?>}
-
-#block-views-events_and_schedules-block_1 .sierra-friends-camp .event-name a:active
-{color:<?php print dcss_color($link_color['camp'], '+1'); ?>}
-
-.block .view-events-and-schedules .event-type{font-size:85%}
-
-#block-views-events_and_schedules-block_1 h4{
-margin:.4em auto .2em;
-line-height:1em;
-}
-
-/* Semester Calendar */
-
-.view-semester-calendar.view-display-id-attachment_3 .editview-field .date-clear-block .form-item .form-item+.form-item,
-.node-type-semester-calendar .node-form .date-clear-block .form-item .form-item+.form-item{
-display:none;
+.region-sidebars input.form-text {
+  width: 100% !important;
 }
 
 <?php if($domain=='camp'):?>
@@ -652,10 +571,10 @@ margin-left:1em;
 /* Views Tables */
 
 .view table tr.odd{
-background-image:url(/sites/all/themes/woolman/images/background-light.jpg);
+background-image:url("/sites/all/themes/woolman/images/background-light.jpg");
 }
 .view table tr.even{
-background-image:url(/sites/all/themes/woolman/images/background-dark.jpg);
+background-image:url("/sites/all/themes/woolman/images/background-dark.jpg");
 }
 body.section-admin .view table tr{
 background-image:none;
@@ -684,15 +603,15 @@ background-position: 0 3px;
 }
 
 ul.styled.heart li{
-background-image: url(/sites/all/themes/woolman/images/bullets/heart-bullet.png);
+background-image: url("/sites/all/themes/woolman/images/bullets/heart-bullet.png");
 }
 
 ul.styled.star li{
-background-image: url(/sites/all/themes/woolman/images/bullets/star-bullet.png);
+background-image: url("/sites/all/themes/woolman/images/bullets/star-bullet.png");
 }
 
 ul.styled.bad li{
-background-image: url(/sites/all/themes/woolman/images/bullets/bad-bullet.png);
+background-image: url("/sites/all/themes/woolman/images/bullets/bad-bullet.png");
 }
 
 /* CiviCRM & Drupal Admin Sections */
@@ -710,7 +629,7 @@ position:relative;
 
 body.section-admin #header{
 height:60px;
-background:<?php print dcss_color($base_color, '-3');?> url(/sites/all/themes/woolman/images/woolman_pjs_sm.png) no-repeat 10px 10px;
+background:<?php print dcss_color($base_color, '-3');?> url("/sites/all/themes/woolman/images/woolman_pjs_sm.png") no-repeat 10px 10px;
 }
 
 body.section-admin div.region-sidebars div.block-inner{
@@ -869,7 +788,7 @@ list-style-type:none;
 padding:4px;
 margin:7px;
 float:left;
-background:url(/sites/all/themes/woolman/images/background-light.jpg) repeat;
+background:url("/sites/all/themes/woolman/images/background-light.jpg") repeat;
 text-align:center;
 width:100px;
 height:130px;
@@ -884,7 +803,7 @@ margin:0px;
 }
 
 .view.gallery-view-covers .views-row{
-background:url(/sites/all/themes/woolman/images/background-light.jpg) repeat;
+background:url("/sites/all/themes/woolman/images/background-light.jpg") repeat;
 float:left;
 margin:0.5em;
 padding:10px;
@@ -910,7 +829,7 @@ a.social-link{
 display:inline-block;
 width:48px;
 height:48px;
-background-image:url(/sites/all/themes/woolman/images/social.png);
+background-image:url("/sites/all/themes/woolman/images/social.png");
 background-repeat:no-repeat;
 }
 
@@ -948,7 +867,7 @@ display:none;
 
 fieldset,
 body.section-user #crm-container fieldset{
-background:url(/sites/all/themes/woolman/images/background-light.jpg) repeat;
+background:url("/sites/all/themes/woolman/images/background-light.jpg") repeat;
 }
 
 fieldset.collapsed{
@@ -1051,6 +970,45 @@ div a.button-style:active,
 div a.button-style:hover, {
 border: 4px inset;
 background: url("/sites/all/themes/woolman/images/background.jpg") repeat scroll 0 0 transparent;
+}
+
+#upload-attachments .checkbox-depth-0 {
+clear:both;
+padding-top:5px;
+float:none;
+}
+
+#upload-attachments .checkbox-depth-1 {
+float:left;
+padding-left:22px;
+}
+
+#upload-attachments .checkbox-depth-0 label.option {
+font-weight:bold;
+}
+
+#show-field-inline-images,
+#edit-field-inline-images-field-inline-images-add-more {
+border-radius: 3px;
+background-repeat:no-repeat; 
+background-image: url("/sites/all/themes/woolman/images/image-icon.png");
+padding-left: 20px;
+}
+
+/* Image Rotations */
+.rotate-90-r {
+transform:rotate(90deg);
+-ms-transform:rotate(90deg); /* IE 9 */
+-moz-transform:rotate(90deg); /* Firefox */
+-webkit-transform:rotate(90deg); /* Safari and Chrome */
+-o-transform:rotate(90deg); /* Opera */
+}
+.rotate-90-l {
+transform:rotate(270deg);
+-ms-transform:rotate(270deg);
+-moz-transform:rotate(270deg);
+-webkit-transform:rotate(270deg);
+-o-transform:rotate(270deg);
 }
 
 /** Drupal admin tables **/
