@@ -1,11 +1,8 @@
-/* $Id: html-elements.css,v 1.1.2.2 2009/02/13 19:42:10 johnalbin Exp $ */
+/**
+ * HTML ELEMENT STYLING
+ */
 
-/****
-**** HTML ELEMENT STYLING
-****/
-
-body
-{
+body {
   font-size: 100%; 
 }
 
@@ -16,8 +13,8 @@ body
 }
 
 #content-area {
-  font-size: 1em; 
-  line-height: 1em;
+  font-size: 1.08em; 
+  line-height: 1.15em;
 }
 
 body, caption, th, td, input, textarea, select, option, legend, fieldset{

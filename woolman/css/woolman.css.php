@@ -435,8 +435,7 @@ margin:0px 0px 15px 0px;
 }
 
 div.region-sidebars div.imagecache,
-div.region-sidebars div.views-field-field-journal-image-fid,
-div.region-sidebars div.views-field-field-staff-headshot-fid {
+div.region-sidebars a.imagecache {
 float:right;
 margin-left:.6em;
 margin-bottom:.4em;
@@ -923,6 +922,13 @@ display:inline;
 margin:0;
 padding:0;
 font-size:0.9em;
+}
+
+.vertical-tabs .vertical-tab-button .summary {
+font-weight: normal;
+font-size: 0.8em;
+color:#4D4D4D;
+text-decoration:none;
 }
 
 /* This is how we do Field Groupings 'round these parts */
