@@ -441,8 +441,8 @@ margin-left:.6em;
 margin-bottom:.4em;
 }
 
-div.region-sidebars a:link,
-div.region-sidebars a:visited{
+.region-sidebars a:link,
+.region-sidebars a:visited{
 color:<?php print dcss_color($link_color[$domain], '-2'); ?>
 }
 
@@ -614,7 +614,6 @@ background-image: url("/sites/all/themes/woolman/images/bullets/bad-bullet.png")
 }
 
 /* CiviCRM & Drupal Admin Sections */
-
 body.section-admin #page{
 background:white;
 max-width:2000px;
@@ -644,73 +643,20 @@ display:none;
 }
 
 /* CIVICRM */
-.crm-create-new-list-inner{
-background-color:#ECF7F6;
-}
-
-.block #crm-create-new-link{
-margin-top:-15px;
-}
-
-#crm-create-new-list{
-top:4px;
-}
-
-#caseSummary{
-margin-bottom:.5em;
-}
-
-#caseSummary div{
-padding:10px 10px 9px;
-background-color:#F6F6F6;
-border:1px solid #999999;
-float:left;
-margin-bottom:12px;
-margin-right:5px;
-}
-
-#caseSummary #semester-pref{
-padding-top:9px;
-margin-bottom:11px;
-}
-
-#caseSummary div div{
-padding:0;
-border:0 none;
-float:none;
-margin:0;
-display:inline;
-}
-
-#caseSummary label{
-margin-right:.3em;
-}
-
-#caseSummary span.edit-icon{
-margin-left:.3em;
-}
-
-#crm-container .crm-case-caseview-form-block-activity_type_id td+td{
-padding-top:16px;
-}
-
-#caseSummary #latest-note{
-clear:both;
-}
-
-#caseSummary #latest-note div{
-display:block;
+#crm-container div.crm-summary-display_name {
+font-size: 1.8em;
+padding: 0.8em 0 0.3em;
+font-weight: bold;
+color: #2F5947;
 }
 
 /* Admissions */
-
 .view-contact-admissions .views-row{
 float:left;
 margin:0 4% 1em;
 }
 
 /* Blog */
-
 .view-Blog span.views-field-field-journal-date-value,
 .view-Blog span.views-field-tid,
 .view-Blog span.views-field-tid-1{
@@ -749,7 +695,6 @@ max-width:100%;
 }
 
 /* Misc Woolman Elements */
-
 div.field-field-staff-headshot,
 div.imagefield-field_journal_image, div.views-field-field-journal-image-fid{
 float:right;
@@ -774,7 +719,6 @@ margin-bottom:.2em;
 }
 
 /* iWitness */
-
 .node-type-iwitness table{
 margin:0 auto;
 padding:0;
@@ -810,7 +754,6 @@ width:300px;
 }
 
 /** Miscellaneous Drupal styles **/
-
 .more-link{ /* Aggregator, blog, and forum more link */
 text-align:right;
 }
@@ -863,7 +806,6 @@ display:none;
 }
 
 /** Forms **/
-
 fieldset,
 body.section-user #crm-container fieldset{
 background:url("/sites/all/themes/woolman/images/background-light.jpg") repeat;
