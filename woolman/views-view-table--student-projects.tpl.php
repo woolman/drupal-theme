@@ -19,32 +19,32 @@
     <caption><?php print $title; ?></caption>
   <?php endif; ?>
   <thead>
-    <tr>
-      <?php foreach ($header as $field => $label): ?>
-				<?php if ($fields[$field] == 'field-project-image-fid') continue; ?>
-        <th class="views-field views-field-<?php print $fields[$field]; ?>">
-          <?php print $label; ?>
-        </th>
-      <?php endforeach; ?>
-    </tr>
+  <tr>
+    <?php foreach ($header as $field => $label): ?>
+      <?php if ($fields[$field] == 'field-inline-images-fid') continue; ?>
+      <th class="views-field views-field-<?php print $fields[$field]; ?>">
+        <?php print $label; ?>
+      </th>
+    <?php endforeach; ?>
+  </tr>
   </thead>
   <tbody>
-    <?php foreach ($rows as $count => $row): ?>
-    
-      <tr class="<?php print implode(' ', $row_classes[$count]); ?>">
-      
-        <?php foreach ($row as $field => $content): ?>
-        
-					<?php if ($fields[$field] == 'field-project-image-fid') continue; ?>
-          <td class="views-field views-field-<?php print $fields[$field]; ?>">
+  <?php foreach ($rows as $count => $row): ?>
 
-            <?php if($content) print $content;
-									 elseif($fields[$field] == 'field-documentary-embed')
-											print $row['field_project_image_fid'];
-							?>
-          </td>
-        <?php endforeach; ?>
-      </tr>
-    <?php endforeach; ?>
+    <tr class="<?php print implode(' ', $row_classes[$count]); ?>">
+
+      <?php foreach ($row as $field => $content): ?>
+
+        <?php if ($fields[$field] == 'field-inline-images-fid') continue; ?>
+        <td class="views-field views-field-<?php print $fields[$field]; ?>">
+
+          <?php if($content) print $content;
+          elseif($fields[$field] == 'field-documentary-embed')
+            print $row['field_inline_images_fid'];
+          ?>
+        </td>
+      <?php endforeach; ?>
+    </tr>
+  <?php endforeach; ?>
   </tbody>
 </table>
