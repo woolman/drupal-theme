@@ -482,6 +482,13 @@ border-bottom:1px solid <?php print $sidebar_headings_color; ?>;
 font-size:.88em;
 }
 
+#block-views-student_projects-block_1{
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
 #block-block-18 .block-inner,
 #block-block-22 .block-inner{ /*facebook*/
 padding-left:7px;
