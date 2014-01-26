@@ -77,9 +77,6 @@
   <?php endif; ?>
 
   <div class="content">
-      <?php if (!empty($embedded_image)): ?>
-          <?php print $embedded_image; ?>
-      <?php endif; ?>
     <?php print $content; ?>
   </div>
 
