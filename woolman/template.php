@@ -303,26 +303,7 @@ function woolman_preprocess(&$vars, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 
-function woolman_preprocess_node(&$vars, $hook) {
-  // Embed image view -- now deprecated
-  if (($vars['type'] == 'page' || $vars['type'] == 'job-posting') && arg(1)!=5) {
-    if ($img = $vars['field_page_image'][0]) {
-      $vars['embedded_image'] = '<img class="imagefield-field_page_image" src="/'.$img['filepath'].'" alt="'.$img['data']['alt'].'" />';
-    }
-    else {
-      global $user;
-      if (in_array('administrator', $user->roles) && 1==2)
-        $vars['embedded_image'] = '<div class="imagefield-field_page_image" style="width:300px; height:200px; border:3px dashed gray; background-color:#E4E4E4; text-align:center; font-size:1.1em; font-weight:bold"><div style="margin-top:4.4em;">No Image<br />Please '.l("Add One", "node/".$vars['nid'].'/edit', array('fragment' => 'edit-title-wrapper')).'</div></div>';
-      elseif ($vars['field_embed_image'][0]['value'] && !$vars['field_page_image'][0]['view']) {
-        while(list($key, $value) = each($vars['field_embed_image_category'])) {   //go through multi-dimensional taxonomy array
-          $taxargs[] = $value['value'];            //store value in single-dimensional array
-        }
-        $taxarg = implode('+',$taxargs);          //convert to string for views argument
-        $vars['embedded_image'] = views_embed_view(embed_image, $vars['field_embed_image'][0]['value'], $taxarg, $vars['field_embed_image_rank'][0]['value']);
-      }
-    }
-  }
-}
+function woolman_preprocess_node(&$vars, $hook) {}
 
 /**
  * Override breadcrumb trail.
