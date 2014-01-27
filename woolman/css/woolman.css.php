@@ -482,9 +482,9 @@ border-bottom:1px solid <?php print $sidebar_headings_color; ?>;
 font-size:.88em;
 }
 
-#block-views-student_projects-block_1{
+#block-views-student_projects-block_1 .content{
 text-align: center;
-display: block;
+float: none;
 margin-left: auto;
 margin-right: auto;
 }
