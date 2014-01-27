@@ -176,8 +176,7 @@ color:<?php print dcss_color($link_color[$domain], '+3'); ?>;
 
 /** content **/
 
-.view-id-embed_image.view-display-id-attachment_1,
-.imagefield-field_page_image{
+.imagefield-field_page_image {
 float:right;
 max-width:55%;
 margin-left:10px;
