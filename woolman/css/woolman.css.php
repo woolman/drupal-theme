@@ -710,8 +710,17 @@ padding-bottom:10px;
 }
 
 #footer{
-margin:1em 0;
+background:url("/sites/all/themes/woolman/images/background-dark.jpg") repeat;
 text-align:center;
+}
+
+#footer-inner{
+background: rgba(37, 4, 1, 0.5);
+color: #eee;
+padding: 1em 0;
+}
+#footer-inner a{
+color: #eee;
 }
 
 #footer .block span{
