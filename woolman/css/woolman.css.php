@@ -181,6 +181,7 @@ float:right;
 max-width:55%;
 margin-left:10px;
 margin-bottom:5px;
+height:auto;
 }
 
 #content-header{

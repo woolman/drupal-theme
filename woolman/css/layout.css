@@ -6,7 +6,7 @@ body{
 
 #page,
 #closure-blocks{
-  min-width: 960px;
+  min-width: 600px;
   max-width: 1200px;
   margin: 0 auto;
   min-height: 100%;
@@ -100,4 +100,18 @@ body{
 #closure-blocks{
   overflow: visible;
   word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+body.narrow #sidebar-left{
+  display:none;
+}
+body.narrow #content-inner{
+  padding-left: 0;
+}
+
+body.xnarrow #sidebar-right{
+  display:none;
+}
+body.xnarrow #content-inner{
+  padding-right: 0;
 }

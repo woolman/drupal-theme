@@ -46,3 +46,21 @@ function preventEnterSubmit(formSelector) {
     }
   });
 }
+
+jQuery(function($) {
+  function handleResize() {
+    if ($(window).width() < 900) {
+      $('body').addClass('narrow');
+    } else {
+      $('body').removeClass('narrow');
+    }
+    if ($(window).width() < 800) {
+      $('body').addClass('xnarrow');
+    } else {
+      $('body').removeClass('xnarrow');
+    }
+  }
+
+  $(window).resize(handleResize);
+  handleResize();
+});
