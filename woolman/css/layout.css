@@ -102,6 +102,13 @@ body{
   word-wrap: break-word; /* A very nice CSS3 property */
 }
 
+/* Hide search button */
+#search input.form-submit {
+  position: fixed;
+  top: -500px;
+}
+
+/* Responsive adjustments */
 body.narrow #sidebar-left{
   display:none;
 }
