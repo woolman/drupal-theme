@@ -41,7 +41,7 @@ stylesheets[all][]  = block-editing.css
 stylesheets[all][]  = wireframes.css
 stylesheets[all][]  = html-elements.css
 stylesheets[all][]  = css/tableofcontents.css
-
+stylesheets[all][]  = css/glyphicons.css
 
 
   ; Set the conditional stylesheets that are processed by IE.
