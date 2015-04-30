@@ -711,24 +711,6 @@ padding-left:10px;
 padding-bottom:10px;
 }
 
-#footer{
-background:url("/sites/all/themes/woolman/images/background-dark.jpg") repeat;
-text-align:center;
-}
-
-#footer-inner{
-background: rgba(37, 4, 1, 0.5);
-color: #eee;
-padding: 1em 0;
-}
-#footer-inner a{
-color: #eee;
-}
-
-#footer .block span{
-margin:0 1.5%;
-}
-
 li h3,
 li h4,
 li h5,
