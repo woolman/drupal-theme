@@ -56,6 +56,7 @@ float:right;
 #top-links .block{
 margin-right:.8em;
 margin-top:2px;
+font-size: .85 em;
 }
 
 #edit-search-theme-form-1.blur{
@@ -71,6 +72,7 @@ height:33px;
 float:none;
 left:0px;
 top:-2px;
+font-size: .9em;
 }
 
 #headerlinks li{

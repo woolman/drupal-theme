@@ -109,6 +109,13 @@ body{
 }
 
 /* Responsive adjustments */
+body.narrow {
+  font-size: 110%;
+}
+body.xnarrow {
+  font-size: 100%;
+}
+
 body.narrow #sidebar-left{
   display:none;
 }
