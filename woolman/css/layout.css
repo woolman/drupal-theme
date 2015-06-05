@@ -94,6 +94,7 @@ body{
   background: rgba(37, 4, 1, 0.5);
   padding: 1em 0;
   font-size: 1.1em;
+  color: #eee;
 }
 #footer-inner ul{
   margin: 0;
@@ -109,7 +110,6 @@ body{
   font-weight: normal;
 }
 #footer-inner a:before {
-  color: #eee;
   margin: 0;
   font-size: 18px;
 }

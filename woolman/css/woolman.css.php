@@ -982,3 +982,7 @@ text-align:left;
 padding-right:1em;
 border-bottom:3px solid #ccc;
 }
+
+a.glyphicons:before {
+color:inherit;
+}
