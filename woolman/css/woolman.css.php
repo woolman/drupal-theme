@@ -623,9 +623,10 @@ background-image: url("/sites/all/themes/woolman/images/bullets/bad-bullet.png")
 }
 
 /* CiviCRM & Drupal Admin Sections */
+body.section-admin,
 body.section-admin #page{
 background:white;
-max-width:2000px;
+max-width:none;
 }
 
 /*add space for civi menu*/
@@ -647,7 +648,8 @@ border:0px solid <?php print dcss_color($base_color, '-3');?>;
 border-radius:7px;
 }
 
-body.section-admin div.block-bottom{
+body.section-admin div.block-bottom,
+body.section-admin #footer{
 display:none;
 }
 

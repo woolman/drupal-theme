@@ -131,7 +131,7 @@ function woolman_preprocess_page(&$vars, $arg) {
   // is this a live server or test server?
   global $base_url;
   $suffix = substr($base_url, -3);
-  $testserver = ($suffix == 'dev' || $suffix == 'new' || $suffix == 'ost' || $suffix == 'box');
+  $testserver = ($suffix == 'dev' || $suffix == 'new' || $suffix == 'ost' || $suffix == 'box' || $suffix == 'loc');
 
   // Subdomain-specific settings
   list($page_title, $site_title) = explode(' | ',$vars['head_title']);
