@@ -655,10 +655,18 @@ display:none;
 
 /* CIVICRM */
 #crm-container div.crm-summary-display_name {
-font-size: 1.8em;
+font-size: 1.5em;
 padding: 0.8em 0 0.3em;
 font-weight: bold;
 color: #2F5947;
+}
+
+.crm-container a{
+font-weight: normal;
+}
+
+.ui-widget{
+font-size: .85em;
 }
 
 /* Admissions */

@@ -4,7 +4,7 @@
 margin-bottom:.5em;
 }
 
-#caseSummary div{
+#caseSummary > div{
 padding:10px 10px 9px;
 background-color:#F6F6F6;
 border:1px solid #999999;
@@ -18,30 +18,10 @@ padding-top:9px;
 margin-bottom:11px;
 }
 
-#caseSummary div div{
-padding:0;
-border:0 none;
-float:none;
-margin:0;
+#caseSummary div.value{
 display:inline;
 }
 
 #caseSummary label{
 margin-right:.3em;
-}
-
-#caseSummary span.edit-icon{
-margin-left:.3em;
-}
-
-#crm-container .crm-case-caseview-form-block-activity_type_id td+td{
-padding-top:16px;
-}
-
-#caseSummary #latest-note{
-clear:both;
-}
-
-#caseSummary #latest-note div{
-display:block;
 }
