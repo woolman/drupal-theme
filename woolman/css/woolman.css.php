@@ -669,6 +669,11 @@ font-weight: normal;
 font-size: .85em;
 }
 
+.crm-public .crm-form-textarea {
+width: 90%;
+min-height: 3em;
+}
+
 /* Admissions */
 .view-contact-admissions .views-row{
 float:left;
