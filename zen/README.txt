@@ -22,7 +22,7 @@ INSTALLATION
         making it available to only the example.com site if there is a
         sites/example.com/settings.php configuration file
 
-    Please note: you will need to create the "theme" folder under "sites/all/"
+    Please note: you will need to create the "themes" folder under "sites/all/"
     or "sites/default/".
 
     For more information about acceptable theme installation directories, read
@@ -76,10 +76,10 @@ installed in sites/all/themes/, but any valid theme directory is acceptable
     the .info file by changing any occurrence of STARTERKIT with the name of
     your sub-theme and editing the name and description field.
 
-    For example, rename the foo/STARTERKIT.info file to foo/foo.info. Edit the
-    foo.info file and change "STARTERKIT.css" to "foo.css", change "name = Zen
-    Sub-theme Starter Kit" to "name = Foo", and change "description = Read..."
-    to "description = A Zen sub-theme".
+    For example, rename the foo/STARTERKIT.info.txt file to foo/foo.info. Edit
+    the foo.info file and change "STARTERKIT.css" to "foo.css", change
+    "name = Zen Sub-theme Starter Kit" to "name = Foo", and change
+    "description = Read..." to "description = A Zen sub-theme".
 
       Why? The .info file describes the basic things about your theme: its
       name, description, features, template regions, CSS files, and JavaScript

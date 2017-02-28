@@ -58,7 +58,7 @@ function zen_breadcrumb($breadcrumb) {
 
     // Return the breadcrumb with separators.
     if (!empty($breadcrumb)) {
-      $breadcrumb_separator = theme_get_setting('zen_breadcrumb_separator');
+      $breadcrumb_separator = filter_xss_admin(theme_get_setting('zen_breadcrumb_separator'));
       $trailing_separator = $title = '';
       if (theme_get_setting('zen_breadcrumb_title')) {
         if ($title = drupal_get_title()) {
@@ -100,6 +100,7 @@ function zen_menu_local_tasks() {
 
   // CTools requires a different set of local task functions.
   if (module_exists('ctools')) {
+    ctools_include('menu');
     $primary = ctools_menu_primary_local_tasks();
     $secondary = ctools_menu_secondary_local_tasks();
   }
@@ -130,7 +131,8 @@ function zen_menu_local_tasks() {
 function zen_preprocess_page(&$vars, $hook) {
   // Add conditional stylesheets.
   if (!module_exists('conditional_styles')) {
-    $vars['styles'] .= $vars['conditional_styles'] = variable_get('conditional_styles_' . $GLOBALS['theme'], '');
+    $vars['conditional_styles'] = variable_get('conditional_styles_' . $GLOBALS['theme'], '');
+    $vars['styles'] .= $vars['conditional_styles'];
   }
 
   // Classes for body element. Allows advanced theming based on context
@@ -174,7 +176,8 @@ function zen_preprocess_page(&$vars, $hook) {
 function zen_preprocess_maintenance_page(&$vars, $hook) {
   // Add conditional stylesheets.
   if (!module_exists('conditional_styles')) {
-    $vars['styles'] .= $vars['conditional_styles'] = variable_get('conditional_styles_' . $GLOBALS['theme'], '');
+    $vars['conditional_styles'] = variable_get('conditional_styles_' . $GLOBALS['theme'], '');
+    $vars['styles'] .= $vars['conditional_styles'];
   }
 
   // Classes for body element. Allows advanced theming based on context
